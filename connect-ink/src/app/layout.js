@@ -1,5 +1,6 @@
 import './globals.css'
 import { Providers } from './redux/provider'
+import Nav from '@/components/nav/Nav'
 
 export const metadata = {
   title: 'Create Next App',
@@ -10,6 +11,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
+        <Nav/>
         <Providers>
           {children}
         </Providers>
