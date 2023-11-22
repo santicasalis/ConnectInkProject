@@ -9,7 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+<<<<<<< HEAD
+    "@vercel/postgres": "^0.5.1",
+=======
     "@reduxjs/toolkit": "^1.9.7",
+>>>>>>> f8a9986983fb41edfd8c7d7c7fe54a2b35212614
     "autoprefixer": "10.4.16",
     "axios": "^1.6.2",
     "cors": "^2.8.5",
