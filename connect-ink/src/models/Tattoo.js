@@ -10,7 +10,7 @@ module.exports = (sequelize) => {
             allowNull: false,
         },
         size: {
-            type: DataTypes.INTEGER,
+            type: DataTypes.ENUM('small', 'medium', 'large'), 
             allowNull: false,
         },
         Image: {

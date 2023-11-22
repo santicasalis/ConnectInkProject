@@ -37,7 +37,7 @@ module.exports = (sequelize) => {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    local: {
+    shopName: {
       type: DataTypes.STRING,
       allowNull: false,
     },
