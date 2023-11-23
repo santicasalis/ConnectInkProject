@@ -6,15 +6,6 @@ export default function Home() {
   return (
     <div>
      
-      <div style={{ position: "fixed", top: 0, left: 0, width: "100%", height: "100%", overflow: "hidden" }}>
-        <Image
-          src="/tat4.jpg" 
-          alt="tatooback"
-          className="dark:invert"
-          layout="fill"
-          objectFit="cover"
-          priority
-        />
         <div style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)", textAlign: "center", color: "#fff", width: "100%" }}>
           <h1 style={{ fontSize: "4rem", margin: 0 }}>ConnectInk</h1>
         </div>
@@ -26,7 +17,7 @@ export default function Home() {
           </button>
         </div>
       </div>
-    </div>
+    
   );
 }
 
