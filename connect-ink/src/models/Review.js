@@ -2,14 +2,14 @@ const { DataTypes } = require('sequelize');
 
 module.exports = (sequelize) => {
     sequelize.define(
-        'Admin', {
+        'Review', {
         id: {
             type: DataTypes.UUID,
             defaultValue: DataTypes.UUIDV4,
             primaryKey: true,
             allowNull: false,
         },
-        comments: {
+        comment: {
             type: DataTypes.STRING,
             allowNull: false,
         },
