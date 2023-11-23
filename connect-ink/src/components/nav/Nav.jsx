@@ -1,27 +1,25 @@
 "use client"
-import Link from "next/link"
+import Button from "../button/Button";
 
 export default function Nav (){
- 
   return (
-    <nav style={{ background: '#333', padding: '10px', color: '#fff' }}>
-      <ul style={{ listStyle: 'none', display: 'flex', justifyContent: 'center', gap: '20px' }}>
+    <nav className="bg-gray-800 p-4 text-white">
+      <ul className="flex justify-between gap-8">
         <li>
-          <Link href="/about">
-           <button> About</button>
-          </Link>
+          <Button link="/" text="ConnectInk!"  />
         </li>
         <li>
-          <Link href="/explore">
-          <button> Explore </button>
-          </Link>
+          
+          <Button link="/about" text="About" />
         </li>
         <li>
-          <Link href="/account">
-          <button> Account </button>
-          </Link>
+          
+          <Button link="/explore" text="Explore" />
+        </li>
+        <li>
+          <Button link="/tattoregform" text="Account" />
         </li>
       </ul>
     </nav>
   );
-};
+}
