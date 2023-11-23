@@ -2,15 +2,19 @@ const { DataTypes } = require('sequelize');
 
 module.exports = (sequelize) => {
     sequelize.define(
-        'Appointments', {
+        'Publication', {
         id: {
             type: DataTypes.UUID,
             defaultValue: DataTypes.UUIDV4,
             primaryKey: true,
             allowNull: false,
         },
-        dateAndTime: {
-            type: DataTypes.DATE,
+        description: {
+            type: DataTypes.STRING,
+            allowNull: false,
+        },
+        image: {
+            type: DataTypes.STRING,
             allowNull: false,
         },
     },
